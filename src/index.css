@@ -22,6 +22,9 @@ code {
     padding-inline: 0 !important;
     margin:20px;
 }
+h1{
+  margin:20px;
+}
 
 .p-x-20{
   padding-inline:20px
@@ -30,6 +33,7 @@ code {
 .form-wrapper{
   display:flex !important;
   justify-content: space-between !important;
+  align-items: flex-end;
   
 }
 
@@ -139,4 +143,10 @@ h4 {
 
 .item.item-big-width {
   min-width: 380px;
+}
+
+
+.footer-a{
+  background-color: #198754 !important;
+  border-color: #198754 !important;
 }
