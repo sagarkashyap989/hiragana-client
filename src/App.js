@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import "./App.css";
+
+//components
+
+import InputTodo from "./components/InputTodo";
+import ListTodos from "./components/ListTodos";
+import DataTable from './components/DataTable'
+import FormModal from "./components/FormModal";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className=" wrapper">
+   
+        {/* <ListTodos /> */}
+        {/* <FormModal/> */}
+
+        <div  className="p-x-20">     <InputTodo /></div>
+
+        <hr/>
+        <div className="p-x-20"><DataTable/></div>
+
+      </div>
+    </Fragment>
   );
 }
 
