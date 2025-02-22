@@ -10,18 +10,22 @@ const fetchFlashcards = async () => {
 
 const Flashcard = ({ card }) => {
   return (
-    <div className="flashcard">
-      <h1 className="hiragana">{card.hiragana}</h1>
-      <h2 className="romaji">{card.romaji}</h2>
-      <p className="memory-aid">{card.memoryAid}</p>
-      <div className="examples">
-        {card.exampleWords.map((word, index) => (
-          <p key={index}>
-            {word.word} ({word.romaji}) - {word.meaning}
-          </p>
-        ))}
-      </div>
-    </div>
+<div className="flashcard">
+  <h1 className="hiragana">{card.hiragana}</h1>
+  <h2 className="pronounce">
+    {card.pronounce.join(", ")}
+  </h2>
+  <p className="analogy">{card.analogy}</p>
+  <p className="memory-aid">{card.memoryAid}</p>
+  <div className="examples">
+    {card.exampleWords.map((word, index) => (
+      <p key={index}>
+        {word.word} ({word.romaji}) - {word.meaning}
+      </p>
+    ))}
+  </div>
+</div>
+
   );
 };
 
