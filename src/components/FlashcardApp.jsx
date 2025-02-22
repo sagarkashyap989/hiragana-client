@@ -3,7 +3,7 @@ import ReactSwipe from "react-swipe";
 import "./styles.css";
 
 const fetchFlashcards = async () => {
-  const response = await fetch("http://localhost:3001/flashcards");
+  const response = await fetch("https://hhh-o94l.onrender.com/flashcards");
   const data = await response.json();
   return data;
 };
